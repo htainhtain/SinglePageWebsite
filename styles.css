@@ -97,9 +97,7 @@ h1{
 }
 
 /* services section */
-/* #services{
-
-} */
+/* #ss */
 
 .content-description{
   margin: auto;
@@ -126,8 +124,13 @@ h3{
 #facts{
   color: white;
   background-image: url(image/fact-photo.jpg);
+
 }
 
+.fact-content{
+  /* padding: 50px; */
+  /* font-weight: bold; */
+}
 
 .fact-no{
   font-size: 4rem;
@@ -136,11 +139,8 @@ h3{
 }
 
 /* greatwork section */
-/* #greatwork{
-  /* overflow: hidden; */
-} */
 
-.greatwork-col{
+div.col-lg-3.col-md-6.greatwork-col{
   padding: 0;
 }
 
@@ -172,6 +172,7 @@ a.nav-link.greatwork-tab.active:hover{
 
 /* media query */
 @media(max-width: 1024px){
+
   h1{
       margin-left: -1em;
   }
