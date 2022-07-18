@@ -1,7 +1,7 @@
-/* *{
-  margin: 0;
-  padding: 0;
-} */
+*{
+  box-sizing: border-box;
+  font-family: 'Hind Siliguri', sans-serif;
+}
 
 html,
 body
@@ -9,7 +9,6 @@ body
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: 'Hind Siliguri', sans-serif;
   text-align: center;
 }
 
@@ -31,7 +30,7 @@ h1,h2,h3,h4,h5,h6{
 /* development section */
 
 #development{
-  height: 40em;
+  height: 100vh;
   background-image: url('image/developer-photo.jpg');
   background-size: cover;
   color: white;
@@ -41,8 +40,16 @@ h1,h2,h3,h4,h5,h6{
   font-size: 1.8rem;
 }
 
+nav{
+  transition: 1s ease;
+}
+
 .nav-item{
   margin-right: 15px;
+}
+
+.navbar-light .navbar-toggler{
+  background-color: white;
 }
 
 .dropdown-toggle::after{
@@ -72,6 +79,15 @@ h1,h2,h3,h4,h5,h6{
   color: white;
 }
 
+.hero-container{
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 h1{
   font-size: 2.5em;
   letter-spacing: 0.2em;
@@ -81,39 +97,29 @@ h1{
   margin-top: 20px;
 }
 
-.title-content{
-  width: 30%;
-  margin: auto;
-  padding-top: 15em;
-}
+
 
 .btn-title{
   margin-top: 10px;
   margin-right: 5px;
 }
 
-.navbar-light .navbar-toggler{
-  background-color: white;
-}
-
 /* services section */
 /* #ss */
 
-.content-description{
-  margin: auto;
+#services{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 15vw;
 }
 
 h2{
-  margin: 40px;
   font-size: 1.5rem;
 }
 
 h3{
   font-size: 1.3rem;
-}
-
-.service-content{
-  padding: 30px;
+  margin: 15px 0px;
 }
 
 .service-icon{
@@ -123,13 +129,13 @@ h3{
 /* fact section */
 #facts{
   color: white;
-  background-image: url(image/fact-photo.jpg);
-
+  background-image: url('image/fact-photo.jpg');
+  padding: 40px 180px;
+  max-width: 1440px;
 }
 
 .fact-content{
-  /* padding: 50px; */
-  /* font-weight: bold; */
+  text-align: center;
 }
 
 .fact-no{
@@ -139,6 +145,9 @@ h3{
 }
 
 /* greatwork section */
+#greatwork{
+  padding-top: 50px;
+}
 
 div.col-lg-3.col-md-6.greatwork-col{
   padding: 0;
@@ -156,6 +165,10 @@ div.col-lg-3.col-md-6.greatwork-col{
   color: #edcf18;
 }
 
+#greatwork a{
+  cursor: pointer;
+}
+
 a.nav-link.greatwork-tab.active:hover{
   color: #edcf18;
 }
@@ -171,76 +184,16 @@ a.nav-link.greatwork-tab.active:hover{
 }
 
 /* media query */
-@media(max-width: 1024px){
-
-  h1{
-      margin-left: -1em;
-  }
-}
-
 @media(max-width: 960px){
   .btn-readmore{
     display: none;
   }
-
-  div.title-content{
-    width: 50%;
-  }
-
-  h1{
-      margin-left: -0.4em;
-  }
 }
 
 @media(max-width: 768px){
-  h1{
-      margin-left: -1.2em;
-  }
-
-  div.title-content{
-    width: 50%;
-  }
-
   .navigation-bar{
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-@media(max-width: 576px){
-  div h1{
-    margin-left: -1em;
-    letter-spacing: 0;
-  }
-
-  div.title-content{
-    width: 50%;
-  }
-
-  .padding-to-global {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media(max-width: 550px){
-  div h1{
-    font-size: 2em;
-    margin-left: -0.1em;
-  }
-
-  div.title-content{
-    width: 50%;
-  }
-}
-
-@media(max-width: 290px){
-  div h1{
-    font-size: 1.5em;
-    margin-left: -0.2em;
-  }
-
-  div.title-content{
-    width: 50%;
-  }
-}
