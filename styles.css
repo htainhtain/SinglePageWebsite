@@ -130,8 +130,9 @@ h3{
 #facts{
   color: white;
   background-image: url('image/fact-photo.jpg');
+  background-size: cover;
   padding: 40px 15vw;
-  max-width: 1440px;
+/*   max-width: 1440px; */
 }
 
 .fact-content{
